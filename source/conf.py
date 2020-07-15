@@ -55,4 +55,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-
+# 2020.7.15 解决在readthedocs中构建出错
+# master file /home/docs/checkouts/readthedocs.org/user_builds/fdevil
+# /checkouts/latest/source/contents.rst not found
+master_doc = 'index'
