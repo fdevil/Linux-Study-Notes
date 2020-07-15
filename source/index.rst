@@ -19,4 +19,6 @@ Welcome 龙妹妹 终于把这个弄好了，嘿嘿嘿
 * :ref:`modindex`
 * :ref:`search`
 
+测试readthedocs自动构建
+========================
 
