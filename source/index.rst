@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.打发打发
 
-Welcome to Linux-Study-Notes's 终于成功了么!
+Welcome 龙妹妹 终于把这个弄好了，嘿嘿嘿
 =============================================
 
 .. toctree::
@@ -18,3 +18,5 @@ Welcome to Linux-Study-Notes's 终于成功了么!
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
