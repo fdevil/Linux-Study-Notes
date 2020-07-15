@@ -22,3 +22,41 @@ Welcome 龙妹妹 终于把这个弄好了，嘿嘿嘿
 测试readthedocs自动构建
 ========================
 
+
+python -m pip install --upgrade pip //更新pip
+
+pip install sphinx //安装sphinx
+
+pip install sphinx -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install sphinx-autobuild //可以构建一个本地的服务  127.0.0.1/8000在浏览器中访问，端口不记得了
+
+pip install sphinx_rtd_theme //安装主题
+
+pip install sphinx_rtd_theme -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install sphinx -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip临时换源提升下载速度其实你只要加个参数 -i，可能就会让下载速度上升 10 倍，比如：
+
+pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+后面的地址可以换成国内的 pip 镜像：
+
+清华 https://pypi.tuna.tsinghua.edu.cn/simple \br
+中科大 https://pypi.mirrors.ustc.edu.cn/simple
+
+阿里云 https://mirrors.aliyun.com/pypi/simple
+
+豆瓣 http://pypi.douban.com/simple
+
+::
+
+	pip install sphinx_rtd_theme -i https://pypi.tuna.tsinghua.edu.cn/simple
+	
+	
+..
+
+      “人生的意志和劳动将创造奇迹般的奇迹。”
+
+      — 涅克拉索
