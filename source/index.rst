@@ -64,3 +64,7 @@ pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple
 	
 测试网络钩子是否运行1 2 3 4
 ==========================================
+
+Webhooks / Manage webhook     /Secret
+=====================================
+057dd908c422af3f1bd70178de73e6d0f93c92c26a4ab690c95ab5865d034a49cb2cbf73c29cc9879c18f7370a166151769517e1c0186a5c5515a329719a3f46
