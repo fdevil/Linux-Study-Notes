@@ -71,6 +71,8 @@ reStructuredText语法
 
 ----
 
+.. _setup:
+
 .. attention:: this is a attention,这是一个注意
 .. caution:: this is a caution,这是一个警告
 .. danger:: this is a danger,这是一个危险
@@ -221,7 +223,7 @@ __ https://www.sohu.com
 __ https://www.taobao.com
 __ https://www.sina.com
 
-这是我的 `引用文献`_ 锚链接空格
+这是我的 `引用文献`_ 锚链接空格，我的引用 [#我的标准]_
 这是我的`引用文献`_锚链接不空格
 
 ----
@@ -279,4 +281,6 @@ sdsd
 .. 这种写法[#引用网页] 依然不会显示"引用网页"几个字
 
 .. [#引用网页] The second draft of the spec:
+.. [#我的标准] 我的标准。
+
 

@@ -24,7 +24,7 @@ python+pip+sphinx+restructuredtext+vscode学习笔记
 
 **:doc:\`/restructuredtext-syntax-copy\`** 取文件restructuredtext-syntax-copy的标题为链接文字
 
-dfsd :ref:`restructuredtext-syntax:Quick start` .
+dfsd :ref:`restructuredtext-syntax <测试readthedocs自动构建>` .
 
 This screencast will help you get started or you can
 :ref:`read our guide below <restructuredtext-syntax:Quick start1>`.
