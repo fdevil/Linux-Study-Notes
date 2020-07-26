@@ -3,10 +3,6 @@
    contain the root `toctree` directive.
 
 
-
-.. toctree::
-   :maxdepth: 2
-   :caption:
 =================================================
 python+pip+sphinx+restructuredtext+vscode学习笔记
 =================================================

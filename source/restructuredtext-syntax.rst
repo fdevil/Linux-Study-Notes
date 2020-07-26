@@ -18,23 +18,20 @@ reStructuredText语法
 这是一个标题
 ~~~~~~~~~~~~
 
+        
+.. toctree::
+    :maxdepth: 2
+    :numbered: 2
+
+    restructuredtext-syntax-copy
+    哈哈 <restructuredtext-syntax-copy>
+
 .. contents:: 目录
    :local: 
    :backlinks: none
    :depth: 1
 
-
-
-
 .. contents::
-
-
-.. code:: rst
-
-    .. contents:: 目录  //目录,冒号后空格接“目录”,会在主页上显示为“目录”,不接“目录”，将显示“contents”.
-    
-    .. contents::
-
 
 .. code代码有 rst java jawl等
 
@@ -45,10 +42,6 @@ reStructuredText语法
         :backlinks: none // none 1 2 3
         :depth: 1 //展示目录级数
 
-
-
-
-
 .. sourcecode:: rst
 
     .. toctree::
@@ -56,18 +49,10 @@ reStructuredText语法
         :hidden:
         :caption: Step-by-step Guides
         
-
         restructuredtext-syntax-copy
         哈哈 <restructuredtext-syntax-copy>
         
         
-        
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    restructuredtext-syntax-copy
-    哈哈 <restructuredtext-syntax-copy>
 
 ----
 
@@ -271,6 +256,49 @@ Quick start1
     
 
 sdsd
+
+----
+
+:guilabel:`百度1`
+
+----
+
+:download:`can download conf <./conf.py>`
+
+----
+
+:kbd:`C-x C-f`
+
+----
+
+:kbd:`Control-x Control-f`
+
+----
+
+:abbr:`LIFO (last-in, first-out)`
+
+----
+
+:mailheader:`Content-Type`
+
+----
+
+:manpage:`ls(1)`
+
+----
+
+|today|
+
+----
+
+|version|
+
+----
+
+|release|
+
+
+
 
 
 引用文献
