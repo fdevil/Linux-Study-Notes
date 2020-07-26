@@ -153,3 +153,52 @@ https://docutils.sourceforge.io/docs/ref/doctree.html
 
 SPHINX中文
 https://www.osgeo.cn/sphinx/index.html
+
+
+
+
+.. toctree::
+   :numbered: 2
+   :maxdepth: 2
+   :caption: Hello Sduty Notes
+
+.. 
+   /index
+   
+   
+..    
+.. toctree::
+   :numbered: 2
+   :caption: Test numbered
+..
+   /index
+   
+   
+.. 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: First notes
+..
+   /restructuredtext-syntax
+   /python-pip-sphinx-restructuredtext-vscode
+
+
+.. 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Second notes
+..
+   /python-pip-sphinx-restructuredtext-vscode
+..
+- :doc:`python-pip-sphinx-restructuredtext-vscode`
+- :doc:`restructuredtext详细语法 <restructuredtext-syntax>`
+- :doc:`restructuredtext-syntax-copy`
+
+
+..
+二级标题
+============
+..
+哈哈哈 :ref:`Git Setup <setup>` 大幅度

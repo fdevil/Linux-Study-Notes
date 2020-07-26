@@ -1,11 +1,22 @@
-.. Linux-Study-Notes documentation master file, created by
-   sphinx-quickstart on Wed Jul 15 14:52:01 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+.. :Author: ZQ
+   :Contact: fdevilpublic@163.com
+   :Revision: 1.0.0
+   :Created Date: 2020-07-26
+   :Modified Date:
+   :Status: First draft
+   :Copyright: This document has been placed in the public domain.
+   
 ========
 学习笔记
 ========
+
+前言:
+
+   这是第一次写博文，起源于一次linux系统的学习。学习过程中想把笔记记下来，防止忘记，意外在网上发现
+   ``sphinx+restructuredText+github+readthedocs`` 写技术文档的各类资料博客，立刻被其强大的功能吸引，
+   在后来的一段时间里，翻阅了无数的中文、英文（英文不行，全靠谷歌）资料，从头到尾实现了从 
+   :guilabel:`Python`、:guilabel:`Sphinx`、:guilabel:`ReStructuredText`、:guilabel:`github`、:guilabel:`ReadTheDocs` 的全过程。
+   在这里把它记录下来。
 
 .. code::
    .. toctree::
@@ -16,49 +27,3 @@
       :titlesonly:    // 只希望显示树中文档的标题，而不希望显示同一级别的其他标题
 
 
-
-.. toctree::
-   :numbered: 2
-   :maxdepth: 2
-   :caption: Hello Sduty Notes
-
-.. 
-   /index
-   
-   
-..    
-.. toctree::
-   :numbered: 2
-   :caption: Test numbered
-..
-   /index
-   
-   
-.. 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: First notes
-..
-   /restructuredtext-syntax
-   /python-pip-sphinx-restructuredtext-vscode
-
-
-.. 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Second notes
-..
-   /python-pip-sphinx-restructuredtext-vscode
-
-- :doc:`python-pip-sphinx-restructuredtext-vscode`
-- :doc:`restructuredtext详细语法 <restructuredtext-syntax>`
-- :doc:`restructuredtext-syntax-copy`
-
-
-
-二级标题
-============
-
-哈哈哈 :ref:`Git Setup <setup>` 大幅度
