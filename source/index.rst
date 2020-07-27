@@ -23,3 +23,7 @@
    restructuredtext-syntax-copy 
    python-pip-sphinx-restructuredtext-vscode
 
+.. code-block:: java
+
+   system.out.printf("Hello Java!");
+ 
