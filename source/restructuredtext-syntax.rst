@@ -16,8 +16,15 @@ reStructuredText语法
 ------------
 
 这是一个标题
-~~~~~~~~~~~~
 
+.. code::
+
+   .. toctree::
+      :maxdepth: 2    // 目录深度
+      :hidden:        // 是否隐藏目录树，只显示左边索引
+      :caption: Java  // 为目录树创建一个标题
+      :numbered: 2    // 显示章节编号,会给所有的文件标题添加序号，只有一个文档只能一个toctree能实现这个功能，最好不用
+      :titlesonly:    // 只希望显示树中文档的标题，而不希望显示同一级别的其他标题
         
 .. toctree::
     :maxdepth: 2
@@ -42,6 +49,14 @@ reStructuredText语法
         :backlinks: none // none 1 2 3
         :depth: 1 //展示目录级数
 
+.. code-block:: rest
+   
+   .. code-block:: rest
+
+      :linenos:                             // 生成行号
+      :lineno-start: number (number)        、、
+
+
 .. sourcecode:: rst
 
     .. toctree::
@@ -51,6 +66,10 @@ reStructuredText语法
         
         restructuredtext-syntax-copy
         哈哈 <restructuredtext-syntax-copy>
+
+
+.. hahcode:: rst
+
         
         
 
@@ -312,3 +331,29 @@ sdsd
 .. [#我的标准] 我的标准。
 
 
+引用参考的内容通常放在页面结尾处，比如 [One]_，Two_, Three_, fore_
+
+脚注引用一 [1]_
+脚注引用二 [#]_
+脚注引用三 [#链接]_
+脚注引用四 [*]_
+脚注引用五 [*]_
+脚注引用六 [*]_
+
+
+
+.. [1] 脚注内容一
+.. [2] 脚注内容二
+.. [#] 脚注内容三
+.. [#链接] 脚注内容四 链接_
+.. [*] 脚注内容五
+.. [*] 脚注内容六
+.. [*] 脚注内容七
+
+
+
+
+.. [One] 参考引用一
+.. [Two] 参考引用二
+.. [Three] `简书超链接 <https://www.jianshu.com/>`_
+.. [fore] `https://www.jianshu.com/`_
