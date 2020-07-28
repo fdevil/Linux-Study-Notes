@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta content="Automate building, versioning, and hosting of your technical documentation continuously on Read the Docs." lang="en" name="description" xml:lang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>python+pip+sphinx+restructuredtext+vscode学习笔记 &mdash; Linux-Study-Notes  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="1. reStructuredText语法-copy复制" href="restructuredtext-syntax-copy.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Linux-Study-Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="python-sphinx-restructuredtext-github-readthedocs.html">Python+sphinx+restructuredtext+github+readthedocs写技术文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext-syntax.html">reStructuredText语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext-syntax-copy.html">1. reStructuredText语法-copy复制</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">python+pip+sphinx+restructuredtext+vscode学习笔记</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#restructuredtext">一、restructuredtext语法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">二、指数和表格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#restructuredtest">三、restructuredTest语法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">一、代码块</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-generic-api-integration2">四、Using the generic API integration2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-generic-api-integration3">一、Using the generic API integration3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#readthedocs">测试readthedocs自动构建</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">测试网络钩子是否运行1 2 3 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#webhooks-manage-webhook-secret">Webhooks / Manage webhook     /Secret</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Linux-Study-Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>python+pip+sphinx+restructuredtext+vscode学习笔记</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-pip-sphinx-restructuredtext-vscode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-pip-sphinx-restructuredtext-vscode">
+<h1>python+pip+sphinx+restructuredtext+vscode学习笔记<a class="headerlink" href="#python-pip-sphinx-restructuredtext-vscode" title="Permalink to this headline">¶</a></h1>
+<p>这是一个关于学习的笔记</p>
+<div class="section" id="restructuredtext">
+<h2>一、restructuredtext语法<a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="restructuredtext-syntax.html"><span class="doc">restructuredtext语法1</span></a></p>
+<p><a class="reference internal" href="restructuredtext-syntax-copy.html"><span class="doc">reStructuredText语法-copy复制</span></a></p>
+<p>这两种语法的区别 <strong>:doc:`restructuredtext语法1 &lt;restructuredtext-syntax&gt;`</strong>   可以指定显示链接文字restructuredtext语法1</p>
+<p><strong>:doc:`/restructuredtext-syntax-copy`</strong> 取文件restructuredtext-syntax-copy的标题为链接文字</p>
+<p>dfsd <span class="xref std std-ref">restructuredtext-syntax</span> .</p>
+<p>This screencast will help you get started or you can
+<span class="xref std std-ref">read our guide below</span>.</p>
+<hr class="docutils" />
+<dl class="simple">
+<dt>第一步</dt><dd><dl class="simple">
+<dt>连接一个 <code class="docutils literal notranslate"><span class="pre">restructuredtext语法</span></code> 文件，我的所有关于restructuredtext语法的内容都将在这个文件中</dt><dd><p>展现出来，
+<span class="guilabel">百度</span></p>
+</dd>
+</dl>
+</dd>
+<dt>二哈哈</dt><dd><dl class="simple">
+<dt>djfksjdfkjsdkfjskdfjskdfjskdfjksdjfksjfdksjfksjdfksjdfksjdfksjdkfjsdf</dt><dd><p>sdf
+sdf</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="id1">
+<h2>二、指数和表格<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="restructuredtest">
+<h2>三、restructuredTest语法<a class="headerlink" href="#restructuredtest" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h3>一、代码块<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="using-the-generic-api-integration2">
+<h2>四、Using the generic API integration2<a class="headerlink" href="#using-the-generic-api-integration2" title="Permalink to this headline">¶</a></h2>
+<p>这个是测试</p>
+<div class="section" id="using-the-generic-api-integration3">
+<h3>一、Using the generic API integration3<a class="headerlink" href="#using-the-generic-api-integration3" title="Permalink to this headline">¶</a></h3>
+<p>This endpoint accepts the following arguments during an HTTP POST:</p>
+<p><strong>1、</strong></p>
+<p>格式：”::”(双冒号，空一行，缩进代码,或者空格，不能顶格写)</p>
+<p>示例:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">示例</span><span class="p">::</span>
+
+    <span class="o">//</span> <span class="n">临时更换pip数据源</span>
+    <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span> <span class="o">-</span><span class="n">i</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">pypi</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">simple</span>
+</pre></div>
+</div>
+<p><strong>2、</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>哈哈哈</p>
+</div>
+<p><strong>3、</strong></p>
+<p>Run <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> in there:</p>
+<p><strong>4、</strong></p>
+<hr class="docutils" />
+<p>二、标题</p>
+<hr class="docutils" />
+<p>坚持以 <code class="docutils literal notranslate"><span class="pre">习近平</span></code> 总书记在 <cite>中央城市</cite> 管理工作会议上讲话精神为指导，</p>
+<ul class="simple">
+<li><p>以服务民生为宗旨，</p></li>
+<li><p>以提升城市品质和形象为目标，</p></li>
+<li><p>以城市精细化管理为抓手，</p></li>
+<li><p>以百度为查询 <code class="docutils literal notranslate"><span class="pre">https://www.baidu.com</span></code></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>以服务民生为宗旨，</p></li>
+<li><p>以提升城市品质和形象为目标，</p></li>
+<li><p>以城市精细化管理为抓手，</p></li>
+<li><p>有序列表以1. 2. 3. 4. ……    或者1. #. #. #. ……</p></li>
+<li><p>有序列表5</p></li>
+</ol>
+<p>在梁平区主要车站周边实施市容环境秩序综合整治，
+着力营造“<span class="guilabel">干净整洁有序</span>、<span class="guilabel">山清水秀城美</span>、<span class="guilabel">宜居宜业</span>”的城市环境，
+不断增强人民群众的幸福感、获得感。</p>
+</div>
+</div>
+<div class="section" id="readthedocs">
+<h2>测试readthedocs自动构建<a class="headerlink" href="#readthedocs" title="Permalink to this headline">¶</a></h2>
+<p>python -m pip install –upgrade pip //更新pip</p>
+<p>pip install sphinx //安装sphinx</p>
+<p>pip install sphinx -i <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<p>pip install sphinx-autobuild //可以构建一个本地的服务  127.0.0.1/8000在浏览器中访问，端口不记得了</p>
+<p>pip install sphinx_rtd_theme //安装主题</p>
+<p>pip install sphinx_rtd_theme -i <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<p>pip install sphinx -i <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<p>pip临时换源提升下载速度其实你只要加个参数 -i，可能就会让下载速度上升 10 倍，比如：</p>
+<p>pip install django -i <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<p>后面的地址可以换成国内的 pip 镜像：</p>
+<p>清华 <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> br
+中科大 <a class="reference external" href="https://pypi.mirrors.ustc.edu.cn/simple">https://pypi.mirrors.ustc.edu.cn/simple</a></p>
+<p>阿里云 <a class="reference external" href="https://mirrors.aliyun.com/pypi/simple">https://mirrors.aliyun.com/pypi/simple</a></p>
+<p>豆瓣 <a class="reference external" href="http://pypi.douban.com/simple">http://pypi.douban.com/simple</a></p>
+<dl class="simple">
+<dt>::</dt><dd><p>pip install sphinx_rtd_theme -i <a class="reference external" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a>
+1</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span> <span class="o">-</span><span class="n">i</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">pypi</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">simple</span>
+<span class="mi">2</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>下面是一个代码块::</dt><dd><p>pip install sphinx_rtd_theme -i <a class="reference external" href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html</a></p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>测试网络钩子是否运行1 2 3 4<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="webhooks-manage-webhook-secret">
+<h2>Webhooks / Manage webhook     /Secret<a class="headerlink" href="#webhooks-manage-webhook-secret" title="Permalink to this headline">¶</a></h2>
+<p>057dd908c422af3f1bd70178de73e6d0f93c92c26a4ab690c95ab5865d034a49cb2cbf73c29cc9879c18f7370a166151769517e1c0186a5c5515a329719a3f46</p>
+<p>vscode 安装错误选择
+selcet how to generate html from rst files</p>
+<p>Windows 系统如何完全卸载 VSCode
+文章目录
+Windows 系统如何完全卸载 VSCode
+0. 参考资料
+1. 删不干净的用户数据
+2. 解决方案
+0. 参考资料
+Uninstall visual studio code in windows
+1. 删不干净的用户数据
+最近正在从 Sublime Text 3 环境切换到 VS Code，看重的是后者的开源、免费、跨平台等特性，以及强大的后台与广泛的用户群。
+但是对 VS Code 的一次卸载重装之后，我发现之前的插件和配置还在，不禁感叹这么多年了，微软还是没有学会软件的正确卸载姿势，只能自己动手将其卸载干净了。</p>
+<p>2. 解决方案
+注意：以下步骤需要在执行 VSCode 自带卸载程序之后执行。</p>
+<p>win + r 打开运行
+%appdata% 回车
+删除 Code 和 Visual Studio Code 文件夹
+地址栏输入 %userprofile% 回车
+删除 .vscode 文件夹
+————————————————</p>
+<p><a class="reference external" href="https://blog.csdn.net/jpch89/article/details/89789247">https://blog.csdn.net/jpch89/article/details/89789247</a>
+版权声明：本文为CSDN博主「团子大圆帅」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a class="reference external" href="https://blog.csdn.net/jpch89/java/article/details/89789247">https://blog.csdn.net/jpch89/java/article/details/89789247</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="restructuredtext-syntax-copy.html" class="btn btn-neutral float-left" title="1. reStructuredText语法-copy复制" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, zq
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

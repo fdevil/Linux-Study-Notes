@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python+sphinx+restructuredtext+github+readthedocs写技术文档 &mdash; Linux-Study-Notes  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="reStructuredText语法" href="restructuredtext-syntax.html" />
+    <link rel="prev" title="学习笔记" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Linux-Study-Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python+sphinx+restructuredtext+github+readthedocs写技术文档</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">前言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-restructuredtext-github-readthedocs">sphinx+reStructuredText+github+readthedocs简介</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sphinxrst">什么是sphinx、rst?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#md-rst">什么是.md、.rst?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#githubgitreadthedocs">什么是github、git、readthedocs?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python">安装python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx">安装sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#restructuredtext">reStructuredText语法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github">github托管文档</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#git">git的使用</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#readthedocs">readthedocs部署文档</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">readthedocs自动配置文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">readthedocs手动配置文档</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">引用文献</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext-syntax.html">reStructuredText语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext-syntax-copy.html">1. reStructuredText语法-copy复制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-pip-sphinx-restructuredtext-vscode.html">python+pip+sphinx+restructuredtext+vscode学习笔记</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Linux-Study-Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Python+sphinx+restructuredtext+github+readthedocs写技术文档</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-sphinx-restructuredtext-github-readthedocs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-sphinx-restructuredtext-github-readthedocs">
+<h1><a class="toc-backref" href="#id7">Python+sphinx+restructuredtext+github+readthedocs写技术文档</a><a class="headerlink" href="#python-sphinx-restructuredtext-github-readthedocs" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Date</dt>
+<dd class="field-odd"><p>2020-07-26</p>
+</dd>
+</dl>
+<div class="contents topic" id="id1">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#python-sphinx-restructuredtext-github-readthedocs" id="id7">Python+sphinx+restructuredtext+github+readthedocs写技术文档</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id2" id="id8">前言</a></p></li>
+<li><p><a class="reference internal" href="#sphinx-restructuredtext-github-readthedocs" id="id9">sphinx+reStructuredText+github+readthedocs简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#sphinxrst" id="id10">什么是sphinx、rst?</a></p></li>
+<li><p><a class="reference internal" href="#md-rst" id="id11">什么是.md、.rst?</a></p></li>
+<li><p><a class="reference internal" href="#githubgitreadthedocs" id="id12">什么是github、git、readthedocs?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#python" id="id13">安装python</a></p></li>
+<li><p><a class="reference internal" href="#sphinx" id="id14">安装sphinx</a></p></li>
+<li><p><a class="reference internal" href="#restructuredtext" id="id15">reStructuredText语法</a></p></li>
+<li><p><a class="reference internal" href="#github" id="id16">github托管文档</a></p>
+<ul>
+<li><p><a class="reference internal" href="#git" id="id17">git的使用</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#readthedocs" id="id18">readthedocs部署文档</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id19">readthedocs自动配置文档</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id20">readthedocs手动配置文档</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id21">引用文献</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id8">前言</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>这是第一次写博文，起源于一次Linux系统的学习。学习过程中想把笔记记下来，防止忘记，意外在网上发现
+<code class="docutils literal notranslate"><span class="pre">sphinx+reStructuredText+github+readthedocs</span></code> 写技术文档的各类资料博客，立刻被其强大的功能吸引，
+在后来的一段时间里，翻阅了无数的中文、英文（英文不行，全靠谷歌）资料，从头到尾验证了从
+<span class="guilabel">Python</span>、<span class="guilabel">pip</span>、<span class="guilabel">Sphinx</span>、<span class="guilabel">reStructuredText(rst)</span>、
+<span class="guilabel">github</span>、<span class="guilabel">ReadTheDocs</span> 的全过程。在这里把所学的知识、所遇到的困难、
+所解决的问题记录下来。</p>
+</div>
+<div class="section" id="sphinx-restructuredtext-github-readthedocs">
+<h2><a class="toc-backref" href="#id9">sphinx+reStructuredText+github+readthedocs简介</a><a class="headerlink" href="#sphinx-restructuredtext-github-readthedocs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sphinxrst">
+<h3><a class="toc-backref" href="#id10">什么是sphinx、rst?</a><a class="headerlink" href="#sphinxrst" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="md-rst">
+<h3><a class="toc-backref" href="#id11">什么是.md、.rst?</a><a class="headerlink" href="#md-rst" title="Permalink to this headline">¶</a></h3>
+<p><strong>reStructuredText</strong> 是扩展名为 <code class="docutils literal notranslate"><span class="pre">.rst</span></code> 的纯文本标记语法。<strong>markdown</strong> 是拓展名为 <code class="docutils literal notranslate"><span class="pre">.md</span></code> 的纯文
+本文件。reStructuredText是一个易于阅读的，看到的是什么您可以得到的纯文本标记语法和解析器系统。它对于
+内联程序文档（例如Python docstrings），快速创建简单的网页以及独立文档很有用。reStructuredText设计用
+于特定应用程序域的可扩展性。reStructuredText解析器是Docutils的组件 。reStructuredText是对StructuredText
+和Setext轻量级标记系统的修订和重新解释 。reStructuredText的主要目标是定义和实现供Python文档字符串和其
+他文档领域使用的标记语法，该语法易读且简单，但足够强大，可以轻松使用。标记的预期目的是将reStructuredText
+文档转换为有用的结构化数据格式。<a class="footnote-reference brackets" href="#rst" id="id3">1</a></p>
+<blockquote>
+<div><p><strong>sdfsfs</strong></p>
+</div></blockquote>
+</div>
+<div class="section" id="githubgitreadthedocs">
+<h3><a class="toc-backref" href="#id12">什么是github、git、readthedocs?</a><a class="headerlink" href="#githubgitreadthedocs" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="python">
+<h2><a class="toc-backref" href="#id13">安装python</a><a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="sphinx">
+<h2><a class="toc-backref" href="#id14">安装sphinx</a><a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="restructuredtext">
+<h2><a class="toc-backref" href="#id15">reStructuredText语法</a><a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="github">
+<h2><a class="toc-backref" href="#id16">github托管文档</a><a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="git">
+<h3><a class="toc-backref" href="#id17">git的使用</a><a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="readthedocs">
+<h2><a class="toc-backref" href="#id18">readthedocs部署文档</a><a class="headerlink" href="#readthedocs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id19">readthedocs自动配置文档</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id20">readthedocs手动配置文档</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id6">
+<h2><a class="toc-backref" href="#id21">引用文献</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="rst"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p><a class="reference external" href="https://www.jianshu.com/p/0dc1eb6feea6">https://www.jianshu.com/p/0dc1eb6feea6</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="restructuredtext-syntax.html" class="btn btn-neutral float-right" title="reStructuredText语法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="学习笔记" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, zq
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
