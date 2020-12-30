@@ -23,3 +23,4 @@
    restructuredtext-syntax
    restructuredtext-syntax-copy 
    python-pip-sphinx-restructuredtext-vscode
+   linux-birds
