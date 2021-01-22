@@ -10,7 +10,7 @@ python+pip+sphinx+restructuredtext+vscode学习笔记
 这是一个关于学习的笔记
 
 一、restructuredtext语法
-------------------------
+----------------------------
 
 :doc:`restructuredtext语法1 <restructuredtext-syntax>`
 
@@ -39,31 +39,31 @@ This screencast will help you get started or you can
 	sdf
 
 二、指数和表格
--------------
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
 三、restructuredTest语法
------------------------
+---------------------------
 
 .. 分割线（四条及以上短线）
 
 ---- 
 
 一、代码块
-~~~~~~~~~
+~~~~~~~~~~~~~~
 
 ----
 
 四、Using the generic API integration2
---------------------------------------
+------------------------------------------
 
 这个是测试
 
 一、Using the generic API integration3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This endpoint accepts the following arguments during an HTTP POST:
 
@@ -94,10 +94,6 @@ This endpoint accepts the following arguments during an HTTP POST:
 **3、**
 
 Run ``sphinx-quickstart`` in there:
-
-.. prompt:: bash $
-
-    make html
 
 **4、**
 
@@ -147,7 +143,7 @@ Run ``sphinx-quickstart`` in there:
 
 
 测试readthedocs自动构建
------------------------
+---------------------------
 
 
 python -m pip install --upgrade pip //更新pip
@@ -198,10 +194,10 @@ pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 	
 测试网络钩子是否运行1 2 3 4
----------------------------
+--------------------------------
 
 Webhooks / Manage webhook     /Secret
--------------------------------------
+------------------------------------------
 
 057dd908c422af3f1bd70178de73e6d0f93c92c26a4ab690c95ab5865d034a49cb2cbf73c29cc9879c18f7370a166151769517e1c0186a5c5515a329719a3f46
 
@@ -234,7 +230,6 @@ win + r 打开运行
 删除 Code 和 Visual Studio Code 文件夹
 地址栏输入 %userprofile% 回车
 删除 .vscode 文件夹
-————————————————
 
 https://blog.csdn.net/jpch89/article/details/89789247
 版权声明：本文为CSDN博主「团子大圆帅」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。

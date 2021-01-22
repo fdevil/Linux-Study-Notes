@@ -25,13 +25,7 @@ reStructuredText语法
       :caption: Java  // 为目录树创建一个标题
       :numbered: 2    // 显示章节编号,会给所有的文件标题添加序号，只有一个文档只能一个toctree能实现这个功能，最好不用
       :titlesonly:    // 只希望显示树中文档的标题，而不希望显示同一级别的其他标题
-        
-.. toctree::
-    :maxdepth: 2
-    :numbered: 2
-
-    restructuredtext-syntax-copy
-    哈哈 <restructuredtext-syntax-copy>
+   
 
 .. contents:: 目录
    :local: 
@@ -68,7 +62,11 @@ reStructuredText语法
         哈哈 <restructuredtext-syntax-copy>
 
 
-.. hahcode:: rst
+.. code:: rst
+
+    .. adasda
+    asdasd
+    asd
 
         
         
@@ -232,8 +230,8 @@ __ https://www.sina.com
 
 ----
 
-This screencast will help you get started or you can
-:ref:`Quick start超链接 <restructuredtext-syntax:Quick start>`.
+.. This screencast will help you get started or you can
+.. :ref:`Quick start超链接 <restructuredtext-syntax:Quick start>`.
 
 
 
@@ -263,9 +261,6 @@ Quick start
 Quick start1
 ~~~~~~~~~~~~
 
-.. prompt:: bash $
-
-    pip install sphinx
     
 .. raw:: html
 
@@ -334,6 +329,7 @@ sdsd
 引用参考的内容通常放在页面结尾处，比如 [One]_，Two_, Three_, fore_
 
 脚注引用一 [1]_
+脚注引用一 [2]_
 脚注引用二 [#]_
 脚注引用三 [#链接]_
 脚注引用四 [*]_
